@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    background-color: rgb(147, 191, 199);
+}
+.Div1{
+    border-radius: 12px;
+    margin-bottom: 20px;
+    
+}
+.Div1 ul{
+  width: 20%; 
+  margin: 0 auto;
+  max-width: auto;
+  max-height: auto;
+}
+#NamList{
+    display: grid;
+    border-radius: 15px;
+    color:rgb(68, 69, 69);
+    list-style: none;
+    text-align: center;
+    background-color: rgb(171, 231, 178);
+    font-family: Arial, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    justify-content: center;
+   
+}
+#NamList li{
+    font-style: italic;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-size: larger;
+    margin: 12px; 
+      width: 150px;
+}
+.Div2{
+   margin: 30px;
+   margin-left: 40%;
+   margin-bottom: 5px;
+}
+#inpt{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-right: 10px;
+    width: 180px;  
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(94, 95, 95);
+}
+.btn1{
+    font-weight: 600;
+    border: none;
+    background-color:rgb(171, 231, 178) ;
+    color: aliceblue;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn1:hover{
+   background-color: cadetblue;
+   transition: 0.5s;
+   opacity: 50%;
+}
+#inpt:focus {
+ outline: none; 
+}
+.btn2{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    opacity: 80%;
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+}
+.btn2:hover{
+   background-color: rgb(61, 170, 173);
+   transition: 0.8s;
+   opacity: 50%;
+   color: black;
+   padding: 10px 40px;
+   color: rgb(255, 255, 255) ;
+}
+#popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(100px); /* Applique un flou à ce qui se trouve derrière la popup */
+    -webkit-backdrop-filter: blur(100px);
+  }
+ h2{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+ }
+  .popup-box {
+    background: white;
+    padding: 100px;
+    border-radius: 8px;
+    text-align: center;
+  }
+#closePopup{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    opacity: 80%;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0px;
+    background-color: aqua;
+    
+  }
+  .blurred{
+    filter: blur(6px);
+  }
+.overlay {
+    position: fixed;
+   bottom: 0;
+    width: 20%;
+    height: 45%;
+    background-color: blue;
+    display: none;
+    justify-content: center;
+    margin-top: 200px;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 600px;
+  }
+.choseName{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.blurred > *:not(#popup) {
+    /* Applique un flou à TOUS les enfants directs du body, sauf #popup */
+    filter: blur(3px); /* Ajustez la valeur du flou (ex: 3px) */
+    transition: filter 0.3s ease-out; /* Optionnel : pour une transition douce */
+}
+
+
+
+
+
